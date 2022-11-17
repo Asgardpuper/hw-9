@@ -1,0 +1,2 @@
+function e(e,t){const o=Math.random()>.3;return new Promise(((n,r)=>{setTimeout((()=>{o?n(`✅ Fulfilled promise ${e+1} in ${t}ms`):r(`❌ Rejected promise ${e+1} in ${t}ms`)}),t)}))}({form:document.querySelector(".form")}).form.addEventListener("submit",(function(t){t.preventDefault();const{delay:o,step:n,amount:r}=t.currentTarget,u=Number(o.value),m=Number(n.value),l=Number(r.value);for(let t=0;t<l;t++){e(t,u+m*t).then((e=>console.log(e))).catch((e=>console.log(e)))}}));
+//# sourceMappingURL=03-promises.0afc9f7f.js.map
